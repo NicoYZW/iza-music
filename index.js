@@ -1,6 +1,5 @@
 const fs = require('fs');
 const discord = require('discord.js');
-const TOKEN = require(client.config.discord.token);
 
 const client = new discord.Client({ disableMentions: 'everyone' });
 
