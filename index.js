@@ -1,5 +1,6 @@
 const fs = require('fs');
 const discord = require('discord.js');
+const TOKEN = require(client.config.discord.token);
 
 const client = new discord.Client({ disableMentions: 'everyone' });
 
@@ -36,4 +37,4 @@ for (const file of player) {
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
 
-client.login(client.config.discord.token);
+client.login(process.env.TOKEN);
